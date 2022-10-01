@@ -66,7 +66,7 @@ const mdTheme = createTheme();
 
 export default function Dashboard(props) {
 
-  const {pages} = props
+  const {pages, id} = props
 
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
@@ -104,8 +104,9 @@ export default function Dashboard(props) {
             >
               Dashboard
             </Typography>
+            {/*icono campana toolbar*/}
             <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
+              <Badge badgeContent={40} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
