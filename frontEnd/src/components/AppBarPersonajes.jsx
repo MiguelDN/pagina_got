@@ -17,7 +17,7 @@ import AccordionPersonajes from '../components/AccordionPersonajes';
 import { useState, useEffect } from 'react';
 import BasicModal from './BasicModal';
 
-
+// PRUEBAS BRANCH 2
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
