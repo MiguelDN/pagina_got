@@ -7,6 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import BasicModal from './BasicModal';
+import BasicModalDoble from './BasicModalDoble';
 
 export const mainListItems = (
   <React.Fragment>
@@ -35,5 +36,10 @@ export const mainListItems = (
       <ListItemText  />
       <BasicModal />
     </ListItemButton>
+    <ListItemText /*component={Link} to="page3"*/>
+      
+      
+      <BasicModalDoble />
+    </ListItemText>
   </React.Fragment>
 );

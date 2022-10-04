@@ -20,6 +20,7 @@ import { ListItemButton } from '@mui/material';
 // };
 
 export default function BasicModal(props) {
+    const {foto} = props
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -69,7 +70,7 @@ export default function BasicModal(props) {
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         SELECCIONE PERSONAJE
                     </Typography>
-                            <BasicList rows={rows} handleClose={handleClose} />
+                            <BasicList rows={rows} handleClose={handleClose} foto = {foto} />
                 </Box>
             </Modal> 
             </> 

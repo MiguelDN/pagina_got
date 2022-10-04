@@ -65,8 +65,11 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 
 export default function Dashboard(props) {
+  const {pages, contador, fotos} = props
 
-  const {pages, id} = props
+  
+
+  
 
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
@@ -106,7 +109,7 @@ export default function Dashboard(props) {
             </Typography>
             {/*icono campana toolbar*/}
             <IconButton color="inherit">
-              <Badge badgeContent={40} color="secondary">
+              <Badge badgeContent={contador} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>

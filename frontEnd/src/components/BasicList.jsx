@@ -12,8 +12,7 @@ import Paper from '@mui/material/Paper';
 import { Link, useParams } from "react-router-dom";
 
 export default function BasicList(props) {
-    const { rows, handleClose } = props
-    console.log(rows)
+    const { rows, handleClose, foto } = props
     const {id} = useParams()
     return (
         <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
@@ -45,7 +44,7 @@ export default function BasicList(props) {
                     <List  >
                         <ListItem disablePadding>
                           
-                            <ListItemButton  component={Link} to='pageimages/dfgd' id={row.fotos} onClick={handleClose} >
+                            <ListItemButton  component={Link} to='pageimages' foto = {row.fotos} onClick={handleClose} >
                                 {console.log(id)}
                                 <ListItemText primary={row.name} />
                             </ListItemButton>
