@@ -11,9 +11,17 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 import Paper from '@mui/material/Paper';
 import { Link, useParams } from "react-router-dom";
 
+import { useFotoChangeContext } from '../context/FotoProvider';
+
+
 export default function BasicList(props) {
     const { rows, handleClose, foto } = props
     const {id} = useParams()
+
+    // creamos una constante para usar el contexto de cambio de foto y la llamamos en el onclick para darle valor al state. esto nos lo guarda en el componente de context
+    const changeFoto = useFotoChangeContext()
+
+    
     return (
         <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {/* <nav aria-label="main mailbox folders">
@@ -44,7 +52,7 @@ export default function BasicList(props) {
                     <List  >
                         <ListItem disablePadding>
                           
-                            <ListItemButton  component={Link} to='pageimages' foto = {row.fotos} onClick={handleClose} >
+                            <ListItemButton component={Link} to='pageimages' foto={row.fotos} onClick={()=>{changeFoto(row.fotos);handleClose()}} >
                                 {console.log(id)}
                                 <ListItemText primary={row.name} />
                             </ListItemButton>

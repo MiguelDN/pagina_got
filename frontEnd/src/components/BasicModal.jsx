@@ -49,7 +49,7 @@ export default function BasicModal(props) {
                         left: 0,
                         bottom: 0,
                         width: '100%',
-                    }}>Open modal</ListItemButton>
+                    }}>Imagen en Dashboard</ListItemButton>
             <Modal
                 open={open}
                 onClose={handleClose}

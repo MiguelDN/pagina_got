@@ -27,8 +27,6 @@ export default function Page1(props) {
                         <Button onClick={sumar} variant="outlined" size="large">
                             sumar contador
                         </Button>
-                  
-                    Page 3
                 </Typography>
             </Grid>   
         </Container>

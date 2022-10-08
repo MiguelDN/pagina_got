@@ -8,6 +8,8 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import BasicModal from './BasicModal';
 import BasicModalDoble from './BasicModalDoble';
+import AlarmAddIcon from '@mui/icons-material/AlarmAdd';
+import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 
 export const mainListItems = (
   <React.Fragment>
@@ -17,28 +19,19 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="DataGrid" />
     </ListItemButton>
-    <ListItemButton component={Link} to="page2">
+    <ListItemButton component={Link} to="Contador">
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <AlarmAddIcon />
       </ListItemIcon>
-      <ListItemText primary="Page 2" />
+      <ListItemText primary="Contador" />
     </ListItemButton>
-    <ListItemButton component={Link} to="page3">
+    
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <AlarmAddIcon />
+        <ListItemText sx={{color:'black' }}><BasicModal /></ListItemText>
       </ListItemIcon>
-      <ListItemText primary="Page 3" />
-    </ListItemButton>
-    <ListItemButton /*component={Link} to="page3"*/>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText  />
-      <BasicModal />
-    </ListItemButton>
+    
     <ListItemText /*component={Link} to="page3"*/>
-      
-      
       <BasicModalDoble />
     </ListItemText>
   </React.Fragment>
